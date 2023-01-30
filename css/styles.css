@@ -227,8 +227,18 @@ body {
     pointer-events: none;
 }
 
+.modal {
+    width: 528px;
+    height: 521px;
+    background-color: var(--dark-theme-text-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .backdrop .is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0.9)
+    transform: translate(-50%, -50%) scale(0.9);
 }
 
 .section {
@@ -390,8 +400,8 @@ body {
 }
 
 
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
+.social-list-item:hover .social-list-icon,
+.social-list-item:focus .social-list-icon {
     background-color: var(--accent-color);
     fill: var(--dark-theme-text-color);
 }
@@ -424,7 +434,7 @@ body {
 }
 
 
-.client-list-link:hover .client-list-icon {
+.client-list-item:hover .client-list-icon {
     border-color: var(--accent-color);
     fill: var(--accent-color);
 }
