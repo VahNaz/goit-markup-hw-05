@@ -553,6 +553,7 @@ body {
 
 .portfolio-image {
     position: relative;
+    overflow: hidden;
 }
 
 .portfolio-overlay {
